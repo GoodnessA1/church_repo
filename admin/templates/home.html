@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="/static/style.css">
+    </head>
+    <body>
+        <h2>WELCOME PRAYER AND HEALING EMBASSY ADMIN</h2>
+        <h2>DATA</h2>
+        <div>
+            {% for datum in data %}
+            <h3>Name: {{ datum.name }}</h3>
+            <h3>Email: {{ datum.email }}</h3>
+            <h3>Phone Number: {{ datum.phone_number }}</h3>
+            <p>Prayer Request: {{ datum.prayer_request }}</p>
+            <hr>
+            {% endfor %}
+        </div>
+    </body>
+</html>

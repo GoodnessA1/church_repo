@@ -1,0 +1,57 @@
+h1 {
+    color: #6e4e80;
+    font-size: 48px;
+}
+
+h2 {
+    font-size: 35px;
+    color: #6e4e80;
+}
+h3 {
+    font-size: 30px;
+    color: maroon;
+}
+
+p {
+    font-size: 20;
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-style: italic;
+}
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    width: 400px;
+    height: 600px;
+    border: solid black 4px;
+    background-color: #FFFAFF;
+}
+
+textarea {
+    width: 300px;
+    height: 200px;
+}
+label, input {
+    margin-left: 10px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    font-size: 25px;
+    color: black;
+}
+
+input {
+    background-color: rgba(246, 248, 247, 1);
+    width: 300px;
+    font-weight: lighter;
+    font-size: 15px;
+    border: solid red 2px;
+    height: 30px;
+}
