@@ -1,12 +1,15 @@
 from flask import Flask
+import os
+from flask_migrate import Migrate
 from model import db
 from home.home import home_bp
 from admin.admin import admin_bp
 
 app = Flask(__name__)
-app.config["SQLALCHEMY_DATABASE_URI"] = 'sqlite:///site.db'
+app.config["SQLALCHEMY_DATABASE_URI"] = os.environ['DATABASE_URL']
 app.config["SQLALCHEMY_TRACK_MODIFICATIONS"] = False
 
+Migrate(app, db)
 db.init_app(app)
 
 app.register_blueprint(home_bp)
