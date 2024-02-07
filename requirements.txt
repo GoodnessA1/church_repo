@@ -2,3 +2,4 @@ gunicorn
 flask
 flask-sqlalchemy
 flask-migrate
+psycopg2-binary
